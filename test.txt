@@ -1,0 +1,2644 @@
+Running Host Storage Details Collector Test Script...
+Connecting to vm-vcsa-01.bcaexpertise.org as Administrator@vsphere.local...
+Successfully connected!
+
+--- Collecting Storage Details for Host: vm-esx-pp-03.bcaexpertise.org ---
+
+--- Full Storage Data (JSON) ---
+{
+  "host_name": "vm-esx-pp-03.bcaexpertise.org",
+  "storage_adapters": [
+    {
+      "key": "key-vim.host.BlockHba-vmhba32",
+      "device": "vmhba32",
+      "bus": -1,
+      "status": "unknown",
+      "model": "USB Storage Controller",
+      "driver": "vmkusb",
+      "pci": "N/A",
+      "type": "vim.host.BlockHba"
+    },
+    {
+      "key": "key-vim.host.InternetScsiHba-vmhba64",
+      "device": "vmhba64",
+      "bus": -1,
+      "status": "unbound",
+      "model": "QLogic 57810 10 Gigabit Ethernet Adapter",
+      "driver": "qfle3i",
+      "pci": "N/A",
+      "type": "vim.host.InternetScsiHba",
+      "iscsi_name": "iqn.1998-01.com.vmware:localhost.zdp.antemeta:2072486345:64",
+      "iscsi_alias": "bnx2i-8030e0152432"
+    },
+    {
+      "key": "key-vim.host.InternetScsiHba-vmhba65",
+      "device": "vmhba65",
+      "bus": -1,
+      "status": "unbound",
+      "model": "QLogic 57810 10 Gigabit Ethernet Adapter",
+      "driver": "qfle3i",
+      "pci": "N/A",
+      "type": "vim.host.InternetScsiHba",
+      "iscsi_name": "iqn.1998-01.com.vmware:localhost.zdp.antemeta:2072486345:65",
+      "iscsi_alias": "bnx2i-8030e0152436"
+    },
+    {
+      "key": "key-vim.host.InternetScsiHba-vmhba66",
+      "device": "vmhba66",
+      "bus": -1,
+      "status": "unbound",
+      "model": "QLogic 57810 10 Gigabit Ethernet Adapter",
+      "driver": "qfle3i",
+      "pci": "N/A",
+      "type": "vim.host.InternetScsiHba",
+      "iscsi_name": "iqn.1998-01.com.vmware:localhost.zdp.antemeta:2072486345:66",
+      "iscsi_alias": "bnx2i-8030e0152480"
+    },
+    {
+      "key": "key-vim.host.InternetScsiHba-vmhba67",
+      "device": "vmhba67",
+      "bus": -1,
+      "status": "unbound",
+      "model": "QLogic 57810 10 Gigabit Ethernet Adapter",
+      "driver": "qfle3i",
+      "pci": "N/A",
+      "type": "vim.host.InternetScsiHba",
+      "iscsi_name": "iqn.1998-01.com.vmware:localhost.zdp.antemeta:2072486345:67",
+      "iscsi_alias": "bnx2i-8030e015249c"
+    },
+    {
+      "key": "key-vim.host.InternetScsiHba-vmhba68",
+      "device": "vmhba68",
+      "bus": -1,
+      "status": "unbound",
+      "model": "QLogic 57840 10 Gigabit Ethernet Adapter",
+      "driver": "qfle3i",
+      "pci": "N/A",
+      "type": "vim.host.InternetScsiHba",
+      "iscsi_name": "iqn.1998-01.com.vmware:localhost.zdp.antemeta:2072486345:68",
+      "iscsi_alias": "bnx2i-08f1eacb1fe2"
+    },
+    {
+      "key": "key-vim.host.FibreChannelOverEthernetHba-vmhba69",
+      "device": "vmhba69",
+      "bus": -1,
+      "status": "offline",
+      "model": "QLogic Inc. FCoE Adapter",
+      "driver": "qfle3f",
+      "pci": "N/A",
+      "type": "vim.host.FibreChannelOverEthernetHba",
+      "node_wwn": "100008f1eacb6c31",
+      "port_wwn": "200008f1eacb6c31",
+      "speed_gbps": "N/A"
+    },
+    {
+      "key": "key-vim.host.InternetScsiHba-vmhba70",
+      "device": "vmhba70",
+      "bus": -1,
+      "status": "unbound",
+      "model": "QLogic 57840 10 Gigabit Ethernet Adapter",
+      "driver": "qfle3i",
+      "pci": "N/A",
+      "type": "vim.host.InternetScsiHba",
+      "iscsi_name": "iqn.1998-01.com.vmware:localhost.zdp.antemeta:2072486345:70",
+      "iscsi_alias": "bnx2i-08f1eacb1fe4"
+    },
+    {
+      "key": "key-vim.host.FibreChannelOverEthernetHba-vmhba71",
+      "device": "vmhba71",
+      "bus": -1,
+      "status": "offline",
+      "model": "QLogic Inc. FCoE Adapter",
+      "driver": "qfle3f",
+      "pci": "N/A",
+      "type": "vim.host.FibreChannelOverEthernetHba",
+      "node_wwn": "100008f1eacb6c33",
+      "port_wwn": "200008f1eacb6c33",
+      "speed_gbps": "N/A"
+    },
+    {
+      "key": "key-vim.host.InternetScsiHba-vmhba72",
+      "device": "vmhba72",
+      "bus": -1,
+      "status": "unbound",
+      "model": "QLogic 57840 10 Gigabit Ethernet Adapter",
+      "driver": "qfle3i",
+      "pci": "N/A",
+      "type": "vim.host.InternetScsiHba",
+      "iscsi_name": "iqn.1998-01.com.vmware:localhost.zdp.antemeta:2072486345:72",
+      "iscsi_alias": "bnx2i-08f1eacb1fe6"
+    },
+    {
+      "key": "key-vim.host.FibreChannelOverEthernetHba-vmhba73",
+      "device": "vmhba73",
+      "bus": -1,
+      "status": "offline",
+      "model": "QLogic Inc. FCoE Adapter",
+      "driver": "qfle3f",
+      "pci": "N/A",
+      "type": "vim.host.FibreChannelOverEthernetHba",
+      "node_wwn": "100008f1eacb6c35",
+      "port_wwn": "200008f1eacb6c35",
+      "speed_gbps": "N/A"
+    },
+    {
+      "key": "key-vim.host.InternetScsiHba-vmhba74",
+      "device": "vmhba74",
+      "bus": -1,
+      "status": "unbound",
+      "model": "QLogic 57840 10 Gigabit Ethernet Adapter",
+      "driver": "qfle3i",
+      "pci": "N/A",
+      "type": "vim.host.InternetScsiHba",
+      "iscsi_name": "iqn.1998-01.com.vmware:localhost.zdp.antemeta:2072486345:74",
+      "iscsi_alias": "bnx2i-08f1eacb1fe8"
+    },
+    {
+      "key": "key-vim.host.FibreChannelOverEthernetHba-vmhba75",
+      "device": "vmhba75",
+      "bus": -1,
+      "status": "offline",
+      "model": "QLogic Inc. FCoE Adapter",
+      "driver": "qfle3f",
+      "pci": "N/A",
+      "type": "vim.host.FibreChannelOverEthernetHba",
+      "node_wwn": "100008f1eacb6c37",
+      "port_wwn": "200008f1eacb6c37",
+      "speed_gbps": "N/A"
+    },
+    {
+      "key": "key-vim.host.InternetScsiHba-vmhba76",
+      "device": "vmhba76",
+      "bus": -1,
+      "status": "unbound",
+      "model": "QLogic 57810 10 Gigabit Ethernet Adapter",
+      "driver": "qfle3i",
+      "pci": "N/A",
+      "type": "vim.host.InternetScsiHba",
+      "iscsi_name": "iqn.1998-01.com.vmware:localhost.zdp.antemeta:2072486345:76",
+      "iscsi_alias": "bnx2i-8030e0206012"
+    },
+    {
+      "key": "key-vim.host.InternetScsiHba-vmhba77",
+      "device": "vmhba77",
+      "bus": -1,
+      "status": "unbound",
+      "model": "QLogic 57810 10 Gigabit Ethernet Adapter",
+      "driver": "qfle3i",
+      "pci": "N/A",
+      "type": "vim.host.InternetScsiHba",
+      "iscsi_name": "iqn.1998-01.com.vmware:localhost.zdp.antemeta:2072486345:77",
+      "iscsi_alias": "bnx2i-8030e0206016"
+    },
+    {
+      "key": "key-vim.host.InternetScsiHba-vmhba78",
+      "device": "vmhba78",
+      "bus": -1,
+      "status": "online",
+      "model": "iSCSI Software Adapter",
+      "driver": "iscsi_vmk",
+      "pci": "N/A",
+      "type": "vim.host.InternetScsiHba",
+      "iscsi_name": "iqn.1998-01.com.vmware:vm-esx-pp-03-2a32dd3e",
+      "iscsi_alias": "iscsi_vmk"
+    }
+  ],
+  "logical_units_multipath": [
+    {
+      "key": "key-vim.host.MultipathInfo.LogicalUnit-0200f90000624a93703a74e0cd04884d75000410c4466c61736841",
+      "id": "0200f90000624a93703a74e0cd04884d75000410c4466c61736841",
+      "lun_type": "N/A",
+      "device_name": "/vmfs/devices/disks/naa.624a93703a74e0cd04884d75000410c4",
+      "canonical_name": "naa.624a93703a74e0cd04884d75000410c4",
+      "vendor": "PURE    ",
+      "model": "FlashArray      ",
+      "lun_type_from_scsi": "disk",
+      "queue_depth": 128,
+      "paths": [
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C4:T1:L245",
+          "name": "vmhba78:C4:T1:L245",
+          "path_state": "standby",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200f90000624a93703a74e0cd04884d75000410c4466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C0:T0:L249",
+          "name": "vmhba78:C0:T0:L249",
+          "path_state": "active",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200f90000624a93703a74e0cd04884d75000410c4466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C5:T0:L249",
+          "name": "vmhba78:C5:T0:L249",
+          "path_state": "active",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200f90000624a93703a74e0cd04884d75000410c4466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C3:T1:L245",
+          "name": "vmhba78:C3:T1:L245",
+          "path_state": "standby",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200f90000624a93703a74e0cd04884d75000410c4466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C4:T0:L249",
+          "name": "vmhba78:C4:T0:L249",
+          "path_state": "active",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200f90000624a93703a74e0cd04884d75000410c4466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C2:T1:L245",
+          "name": "vmhba78:C2:T1:L245",
+          "path_state": "standby",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200f90000624a93703a74e0cd04884d75000410c4466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C7:T1:L245",
+          "name": "vmhba78:C7:T1:L245",
+          "path_state": "standby",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200f90000624a93703a74e0cd04884d75000410c4466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C3:T0:L249",
+          "name": "vmhba78:C3:T0:L249",
+          "path_state": "active",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200f90000624a93703a74e0cd04884d75000410c4466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C1:T1:L245",
+          "name": "vmhba78:C1:T1:L245",
+          "path_state": "standby",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200f90000624a93703a74e0cd04884d75000410c4466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C6:T1:L245",
+          "name": "vmhba78:C6:T1:L245",
+          "path_state": "standby",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200f90000624a93703a74e0cd04884d75000410c4466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C2:T0:L249",
+          "name": "vmhba78:C2:T0:L249",
+          "path_state": "active",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200f90000624a93703a74e0cd04884d75000410c4466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C7:T0:L249",
+          "name": "vmhba78:C7:T0:L249",
+          "path_state": "active",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200f90000624a93703a74e0cd04884d75000410c4466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C0:T1:L245",
+          "name": "vmhba78:C0:T1:L245",
+          "path_state": "standby",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200f90000624a93703a74e0cd04884d75000410c4466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C5:T1:L245",
+          "name": "vmhba78:C5:T1:L245",
+          "path_state": "standby",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200f90000624a93703a74e0cd04884d75000410c4466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C1:T0:L249",
+          "name": "vmhba78:C1:T0:L249",
+          "path_state": "active",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200f90000624a93703a74e0cd04884d75000410c4466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C6:T0:L249",
+          "name": "vmhba78:C6:T0:L249",
+          "path_state": "active",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200f90000624a93703a74e0cd04884d75000410c4466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d",
+          "iscsi_transport_alias": ""
+        }
+      ],
+      "policy": {
+        "name": "VMW_PSP_RR",
+        "preferred_path_key": "N/A"
+      }
+    },
+    {
+      "key": "key-vim.host.MultipathInfo.LogicalUnit-0200f70000624a93703a74e0cd04884d7500013dc6466c61736841",
+      "id": "0200f70000624a93703a74e0cd04884d7500013dc6466c61736841",
+      "lun_type": "N/A",
+      "device_name": "/vmfs/devices/disks/naa.624a93703a74e0cd04884d7500013dc6",
+      "canonical_name": "naa.624a93703a74e0cd04884d7500013dc6",
+      "vendor": "PURE    ",
+      "model": "FlashArray      ",
+      "lun_type_from_scsi": "disk",
+      "queue_depth": 128,
+      "paths": [
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C0:T1:L252",
+          "name": "vmhba78:C0:T1:L252",
+          "path_state": "standby",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200f70000624a93703a74e0cd04884d7500013dc6466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C0:T0:L247",
+          "name": "vmhba78:C0:T0:L247",
+          "path_state": "active",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200f70000624a93703a74e0cd04884d7500013dc6466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C5:T1:L252",
+          "name": "vmhba78:C5:T1:L252",
+          "path_state": "standby",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200f70000624a93703a74e0cd04884d7500013dc6466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C5:T0:L247",
+          "name": "vmhba78:C5:T0:L247",
+          "path_state": "active",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200f70000624a93703a74e0cd04884d7500013dc6466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C4:T1:L252",
+          "name": "vmhba78:C4:T1:L252",
+          "path_state": "standby",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200f70000624a93703a74e0cd04884d7500013dc6466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C4:T0:L247",
+          "name": "vmhba78:C4:T0:L247",
+          "path_state": "active",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200f70000624a93703a74e0cd04884d7500013dc6466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C3:T1:L252",
+          "name": "vmhba78:C3:T1:L252",
+          "path_state": "standby",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200f70000624a93703a74e0cd04884d7500013dc6466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C3:T0:L247",
+          "name": "vmhba78:C3:T0:L247",
+          "path_state": "active",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200f70000624a93703a74e0cd04884d7500013dc6466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C2:T1:L252",
+          "name": "vmhba78:C2:T1:L252",
+          "path_state": "standby",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200f70000624a93703a74e0cd04884d7500013dc6466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C2:T0:L247",
+          "name": "vmhba78:C2:T0:L247",
+          "path_state": "active",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200f70000624a93703a74e0cd04884d7500013dc6466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C7:T1:L252",
+          "name": "vmhba78:C7:T1:L252",
+          "path_state": "standby",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200f70000624a93703a74e0cd04884d7500013dc6466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C7:T0:L247",
+          "name": "vmhba78:C7:T0:L247",
+          "path_state": "active",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200f70000624a93703a74e0cd04884d7500013dc6466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C1:T1:L252",
+          "name": "vmhba78:C1:T1:L252",
+          "path_state": "standby",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200f70000624a93703a74e0cd04884d7500013dc6466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C1:T0:L247",
+          "name": "vmhba78:C1:T0:L247",
+          "path_state": "active",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200f70000624a93703a74e0cd04884d7500013dc6466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C6:T1:L252",
+          "name": "vmhba78:C6:T1:L252",
+          "path_state": "standby",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200f70000624a93703a74e0cd04884d7500013dc6466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C6:T0:L247",
+          "name": "vmhba78:C6:T0:L247",
+          "path_state": "active",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200f70000624a93703a74e0cd04884d7500013dc6466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d",
+          "iscsi_transport_alias": ""
+        }
+      ],
+      "policy": {
+        "name": "VMW_PSP_RR",
+        "preferred_path_key": "N/A"
+      }
+    },
+    {
+      "key": "key-vim.host.MultipathInfo.LogicalUnit-0200f30000624a93703a74e0cd04884d75000d67c0466c61736841",
+      "id": "0200f30000624a93703a74e0cd04884d75000d67c0466c61736841",
+      "lun_type": "N/A",
+      "device_name": "/vmfs/devices/disks/naa.624a93703a74e0cd04884d75000d67c0",
+      "canonical_name": "naa.624a93703a74e0cd04884d75000d67c0",
+      "vendor": "PURE    ",
+      "model": "FlashArray      ",
+      "lun_type_from_scsi": "disk",
+      "queue_depth": 128,
+      "paths": [
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C4:T1:L243",
+          "name": "vmhba78:C4:T1:L243",
+          "path_state": "standby",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200f30000624a93703a74e0cd04884d75000d67c0466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C0:T0:L243",
+          "name": "vmhba78:C0:T0:L243",
+          "path_state": "active",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200f30000624a93703a74e0cd04884d75000d67c0466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C5:T0:L243",
+          "name": "vmhba78:C5:T0:L243",
+          "path_state": "active",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200f30000624a93703a74e0cd04884d75000d67c0466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C3:T1:L243",
+          "name": "vmhba78:C3:T1:L243",
+          "path_state": "standby",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200f30000624a93703a74e0cd04884d75000d67c0466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C4:T0:L243",
+          "name": "vmhba78:C4:T0:L243",
+          "path_state": "active",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200f30000624a93703a74e0cd04884d75000d67c0466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C2:T1:L243",
+          "name": "vmhba78:C2:T1:L243",
+          "path_state": "standby",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200f30000624a93703a74e0cd04884d75000d67c0466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C7:T1:L243",
+          "name": "vmhba78:C7:T1:L243",
+          "path_state": "standby",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200f30000624a93703a74e0cd04884d75000d67c0466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C3:T0:L243",
+          "name": "vmhba78:C3:T0:L243",
+          "path_state": "active",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200f30000624a93703a74e0cd04884d75000d67c0466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C1:T1:L243",
+          "name": "vmhba78:C1:T1:L243",
+          "path_state": "standby",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200f30000624a93703a74e0cd04884d75000d67c0466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C6:T1:L243",
+          "name": "vmhba78:C6:T1:L243",
+          "path_state": "standby",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200f30000624a93703a74e0cd04884d75000d67c0466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C2:T0:L243",
+          "name": "vmhba78:C2:T0:L243",
+          "path_state": "active",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200f30000624a93703a74e0cd04884d75000d67c0466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C7:T0:L243",
+          "name": "vmhba78:C7:T0:L243",
+          "path_state": "active",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200f30000624a93703a74e0cd04884d75000d67c0466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C0:T1:L243",
+          "name": "vmhba78:C0:T1:L243",
+          "path_state": "standby",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200f30000624a93703a74e0cd04884d75000d67c0466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C5:T1:L243",
+          "name": "vmhba78:C5:T1:L243",
+          "path_state": "standby",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200f30000624a93703a74e0cd04884d75000d67c0466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C1:T0:L243",
+          "name": "vmhba78:C1:T0:L243",
+          "path_state": "active",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200f30000624a93703a74e0cd04884d75000d67c0466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C6:T0:L243",
+          "name": "vmhba78:C6:T0:L243",
+          "path_state": "active",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200f30000624a93703a74e0cd04884d75000d67c0466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d",
+          "iscsi_transport_alias": ""
+        }
+      ],
+      "policy": {
+        "name": "VMW_PSP_RR",
+        "preferred_path_key": "N/A"
+      }
+    },
+    {
+      "key": "key-vim.host.MultipathInfo.LogicalUnit-0200f60000624a93703a74e0cd04884d7500039c6b466c61736841",
+      "id": "0200f60000624a93703a74e0cd04884d7500039c6b466c61736841",
+      "lun_type": "N/A",
+      "device_name": "/vmfs/devices/disks/naa.624a93703a74e0cd04884d7500039c6b",
+      "canonical_name": "naa.624a93703a74e0cd04884d7500039c6b",
+      "vendor": "PURE    ",
+      "model": "FlashArray      ",
+      "lun_type_from_scsi": "disk",
+      "queue_depth": 128,
+      "paths": [
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C0:T1:L251",
+          "name": "vmhba78:C0:T1:L251",
+          "path_state": "standby",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200f60000624a93703a74e0cd04884d7500039c6b466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C0:T0:L246",
+          "name": "vmhba78:C0:T0:L246",
+          "path_state": "active",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200f60000624a93703a74e0cd04884d7500039c6b466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C5:T1:L251",
+          "name": "vmhba78:C5:T1:L251",
+          "path_state": "standby",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200f60000624a93703a74e0cd04884d7500039c6b466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C5:T0:L246",
+          "name": "vmhba78:C5:T0:L246",
+          "path_state": "active",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200f60000624a93703a74e0cd04884d7500039c6b466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C4:T1:L251",
+          "name": "vmhba78:C4:T1:L251",
+          "path_state": "standby",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200f60000624a93703a74e0cd04884d7500039c6b466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C4:T0:L246",
+          "name": "vmhba78:C4:T0:L246",
+          "path_state": "active",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200f60000624a93703a74e0cd04884d7500039c6b466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C3:T1:L251",
+          "name": "vmhba78:C3:T1:L251",
+          "path_state": "standby",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200f60000624a93703a74e0cd04884d7500039c6b466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C3:T0:L246",
+          "name": "vmhba78:C3:T0:L246",
+          "path_state": "active",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200f60000624a93703a74e0cd04884d7500039c6b466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C2:T1:L251",
+          "name": "vmhba78:C2:T1:L251",
+          "path_state": "standby",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200f60000624a93703a74e0cd04884d7500039c6b466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C2:T0:L246",
+          "name": "vmhba78:C2:T0:L246",
+          "path_state": "active",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200f60000624a93703a74e0cd04884d7500039c6b466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C7:T1:L251",
+          "name": "vmhba78:C7:T1:L251",
+          "path_state": "standby",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200f60000624a93703a74e0cd04884d7500039c6b466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C7:T0:L246",
+          "name": "vmhba78:C7:T0:L246",
+          "path_state": "active",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200f60000624a93703a74e0cd04884d7500039c6b466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C1:T1:L251",
+          "name": "vmhba78:C1:T1:L251",
+          "path_state": "standby",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200f60000624a93703a74e0cd04884d7500039c6b466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C1:T0:L246",
+          "name": "vmhba78:C1:T0:L246",
+          "path_state": "active",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200f60000624a93703a74e0cd04884d7500039c6b466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C6:T1:L251",
+          "name": "vmhba78:C6:T1:L251",
+          "path_state": "standby",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200f60000624a93703a74e0cd04884d7500039c6b466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C6:T0:L246",
+          "name": "vmhba78:C6:T0:L246",
+          "path_state": "active",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200f60000624a93703a74e0cd04884d7500039c6b466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d",
+          "iscsi_transport_alias": ""
+        }
+      ],
+      "policy": {
+        "name": "VMW_PSP_RR",
+        "preferred_path_key": "N/A"
+      }
+    },
+    {
+      "key": "key-vim.host.MultipathInfo.LogicalUnit-0200f50000624a93703a74e0cd04884d750006167b466c61736841",
+      "id": "0200f50000624a93703a74e0cd04884d750006167b466c61736841",
+      "lun_type": "N/A",
+      "device_name": "/vmfs/devices/disks/naa.624a93703a74e0cd04884d750006167b",
+      "canonical_name": "naa.624a93703a74e0cd04884d750006167b",
+      "vendor": "PURE    ",
+      "model": "FlashArray      ",
+      "lun_type_from_scsi": "disk",
+      "queue_depth": 128,
+      "paths": [
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C0:T1:L250",
+          "name": "vmhba78:C0:T1:L250",
+          "path_state": "standby",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200f50000624a93703a74e0cd04884d750006167b466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C0:T0:L245",
+          "name": "vmhba78:C0:T0:L245",
+          "path_state": "active",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200f50000624a93703a74e0cd04884d750006167b466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C5:T1:L250",
+          "name": "vmhba78:C5:T1:L250",
+          "path_state": "standby",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200f50000624a93703a74e0cd04884d750006167b466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C5:T0:L245",
+          "name": "vmhba78:C5:T0:L245",
+          "path_state": "active",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200f50000624a93703a74e0cd04884d750006167b466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C4:T1:L250",
+          "name": "vmhba78:C4:T1:L250",
+          "path_state": "standby",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200f50000624a93703a74e0cd04884d750006167b466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C4:T0:L245",
+          "name": "vmhba78:C4:T0:L245",
+          "path_state": "active",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200f50000624a93703a74e0cd04884d750006167b466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C3:T1:L250",
+          "name": "vmhba78:C3:T1:L250",
+          "path_state": "standby",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200f50000624a93703a74e0cd04884d750006167b466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C3:T0:L245",
+          "name": "vmhba78:C3:T0:L245",
+          "path_state": "active",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200f50000624a93703a74e0cd04884d750006167b466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C2:T1:L250",
+          "name": "vmhba78:C2:T1:L250",
+          "path_state": "standby",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200f50000624a93703a74e0cd04884d750006167b466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C2:T0:L245",
+          "name": "vmhba78:C2:T0:L245",
+          "path_state": "active",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200f50000624a93703a74e0cd04884d750006167b466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C7:T1:L250",
+          "name": "vmhba78:C7:T1:L250",
+          "path_state": "standby",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200f50000624a93703a74e0cd04884d750006167b466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C7:T0:L245",
+          "name": "vmhba78:C7:T0:L245",
+          "path_state": "active",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200f50000624a93703a74e0cd04884d750006167b466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C1:T1:L250",
+          "name": "vmhba78:C1:T1:L250",
+          "path_state": "standby",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200f50000624a93703a74e0cd04884d750006167b466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C1:T0:L245",
+          "name": "vmhba78:C1:T0:L245",
+          "path_state": "active",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200f50000624a93703a74e0cd04884d750006167b466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C6:T1:L250",
+          "name": "vmhba78:C6:T1:L250",
+          "path_state": "standby",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200f50000624a93703a74e0cd04884d750006167b466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C6:T0:L245",
+          "name": "vmhba78:C6:T0:L245",
+          "path_state": "active",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200f50000624a93703a74e0cd04884d750006167b466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d",
+          "iscsi_transport_alias": ""
+        }
+      ],
+      "policy": {
+        "name": "VMW_PSP_RR",
+        "preferred_path_key": "N/A"
+      }
+    },
+    {
+      "key": "key-vim.host.MultipathInfo.LogicalUnit-0200f40000624a93703a74e0cd04884d75000872f7466c61736841",
+      "id": "0200f40000624a93703a74e0cd04884d75000872f7466c61736841",
+      "lun_type": "N/A",
+      "device_name": "/vmfs/devices/disks/naa.624a93703a74e0cd04884d75000872f7",
+      "canonical_name": "naa.624a93703a74e0cd04884d75000872f7",
+      "vendor": "PURE    ",
+      "model": "FlashArray      ",
+      "lun_type_from_scsi": "disk",
+      "queue_depth": 128,
+      "paths": [
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C4:T1:L249",
+          "name": "vmhba78:C4:T1:L249",
+          "path_state": "standby",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200f40000624a93703a74e0cd04884d75000872f7466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C0:T0:L244",
+          "name": "vmhba78:C0:T0:L244",
+          "path_state": "active",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200f40000624a93703a74e0cd04884d75000872f7466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C5:T0:L244",
+          "name": "vmhba78:C5:T0:L244",
+          "path_state": "active",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200f40000624a93703a74e0cd04884d75000872f7466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C3:T1:L249",
+          "name": "vmhba78:C3:T1:L249",
+          "path_state": "standby",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200f40000624a93703a74e0cd04884d75000872f7466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C4:T0:L244",
+          "name": "vmhba78:C4:T0:L244",
+          "path_state": "active",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200f40000624a93703a74e0cd04884d75000872f7466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C2:T1:L249",
+          "name": "vmhba78:C2:T1:L249",
+          "path_state": "standby",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200f40000624a93703a74e0cd04884d75000872f7466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C7:T1:L249",
+          "name": "vmhba78:C7:T1:L249",
+          "path_state": "standby",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200f40000624a93703a74e0cd04884d75000872f7466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C3:T0:L244",
+          "name": "vmhba78:C3:T0:L244",
+          "path_state": "active",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200f40000624a93703a74e0cd04884d75000872f7466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C1:T1:L249",
+          "name": "vmhba78:C1:T1:L249",
+          "path_state": "standby",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200f40000624a93703a74e0cd04884d75000872f7466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C6:T1:L249",
+          "name": "vmhba78:C6:T1:L249",
+          "path_state": "standby",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200f40000624a93703a74e0cd04884d75000872f7466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C2:T0:L244",
+          "name": "vmhba78:C2:T0:L244",
+          "path_state": "active",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200f40000624a93703a74e0cd04884d75000872f7466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C7:T0:L244",
+          "name": "vmhba78:C7:T0:L244",
+          "path_state": "active",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200f40000624a93703a74e0cd04884d75000872f7466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C0:T1:L249",
+          "name": "vmhba78:C0:T1:L249",
+          "path_state": "standby",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200f40000624a93703a74e0cd04884d75000872f7466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C5:T1:L249",
+          "name": "vmhba78:C5:T1:L249",
+          "path_state": "standby",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200f40000624a93703a74e0cd04884d75000872f7466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C1:T0:L244",
+          "name": "vmhba78:C1:T0:L244",
+          "path_state": "active",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200f40000624a93703a74e0cd04884d75000872f7466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C6:T0:L244",
+          "name": "vmhba78:C6:T0:L244",
+          "path_state": "active",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200f40000624a93703a74e0cd04884d75000872f7466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d",
+          "iscsi_transport_alias": ""
+        }
+      ],
+      "policy": {
+        "name": "VMW_PSP_RR",
+        "preferred_path_key": "N/A"
+      }
+    },
+    {
+      "key": "key-vim.host.MultipathInfo.LogicalUnit-0200fe0000624a9370fd48da0d949423ea000113e8466c61736841",
+      "id": "0200fe0000624a9370fd48da0d949423ea000113e8466c61736841",
+      "lun_type": "N/A",
+      "device_name": "/vmfs/devices/disks/naa.624a9370fd48da0d949423ea000113e8",
+      "canonical_name": "naa.624a9370fd48da0d949423ea000113e8",
+      "vendor": "PURE    ",
+      "model": "FlashArray      ",
+      "lun_type_from_scsi": "disk",
+      "queue_depth": 128,
+      "paths": [
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C1:T0:L254",
+          "name": "vmhba78:C1:T0:L254",
+          "path_state": "active",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200fe0000624a9370fd48da0d949423ea000113e8466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C6:T0:L254",
+          "name": "vmhba78:C6:T0:L254",
+          "path_state": "active",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200fe0000624a9370fd48da0d949423ea000113e8466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C0:T0:L254",
+          "name": "vmhba78:C0:T0:L254",
+          "path_state": "active",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200fe0000624a9370fd48da0d949423ea000113e8466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C5:T0:L254",
+          "name": "vmhba78:C5:T0:L254",
+          "path_state": "active",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200fe0000624a9370fd48da0d949423ea000113e8466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C4:T0:L254",
+          "name": "vmhba78:C4:T0:L254",
+          "path_state": "active",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200fe0000624a9370fd48da0d949423ea000113e8466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C3:T0:L254",
+          "name": "vmhba78:C3:T0:L254",
+          "path_state": "active",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200fe0000624a9370fd48da0d949423ea000113e8466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C2:T0:L254",
+          "name": "vmhba78:C2:T0:L254",
+          "path_state": "active",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200fe0000624a9370fd48da0d949423ea000113e8466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C7:T0:L254",
+          "name": "vmhba78:C7:T0:L254",
+          "path_state": "active",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200fe0000624a9370fd48da0d949423ea000113e8466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d",
+          "iscsi_transport_alias": ""
+        }
+      ],
+      "policy": {
+        "name": "VMW_PSP_RR",
+        "preferred_path_key": "N/A"
+      }
+    },
+    {
+      "key": "key-vim.host.MultipathInfo.LogicalUnit-01000000003239323033303038323832303134303030555342332e30",
+      "id": "01000000003239323033303038323832303134303030555342332e30",
+      "lun_type": "N/A",
+      "device_name": "/vmfs/devices/disks/mpx.vmhba32:C0:T0:L0",
+      "canonical_name": "mpx.vmhba32:C0:T0:L0",
+      "vendor": "Generic ",
+      "model": "USB3.0-CRW      ",
+      "lun_type_from_scsi": "disk",
+      "queue_depth": 1,
+      "paths": [
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba32:C0:T0:L0",
+          "name": "vmhba32:C0:T0:L0",
+          "path_state": "active",
+          "adapter_key": "key-vim.host.BlockHba-vmhba32",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-01000000003239323033303038323832303134303030555342332e30",
+          "transport_type": "vim.host.BlockAdapterTargetTransport"
+        }
+      ],
+      "policy": {
+        "name": "VMW_PSP_FIXED",
+        "preferred_path_key": "N/A"
+      }
+    },
+    {
+      "key": "key-vim.host.MultipathInfo.LogicalUnit-0200f80000624a93703a74e0cd04884d750009c34e466c61736841",
+      "id": "0200f80000624a93703a74e0cd04884d750009c34e466c61736841",
+      "lun_type": "N/A",
+      "device_name": "/vmfs/devices/disks/naa.624a93703a74e0cd04884d750009c34e",
+      "canonical_name": "naa.624a93703a74e0cd04884d750009c34e",
+      "vendor": "PURE    ",
+      "model": "FlashArray      ",
+      "lun_type_from_scsi": "disk",
+      "queue_depth": 128,
+      "paths": [
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C4:T1:L244",
+          "name": "vmhba78:C4:T1:L244",
+          "path_state": "standby",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200f80000624a93703a74e0cd04884d750009c34e466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C0:T0:L248",
+          "name": "vmhba78:C0:T0:L248",
+          "path_state": "active",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200f80000624a93703a74e0cd04884d750009c34e466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C5:T0:L248",
+          "name": "vmhba78:C5:T0:L248",
+          "path_state": "active",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200f80000624a93703a74e0cd04884d750009c34e466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C3:T1:L244",
+          "name": "vmhba78:C3:T1:L244",
+          "path_state": "standby",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200f80000624a93703a74e0cd04884d750009c34e466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C4:T0:L248",
+          "name": "vmhba78:C4:T0:L248",
+          "path_state": "active",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200f80000624a93703a74e0cd04884d750009c34e466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C2:T1:L244",
+          "name": "vmhba78:C2:T1:L244",
+          "path_state": "standby",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200f80000624a93703a74e0cd04884d750009c34e466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C7:T1:L244",
+          "name": "vmhba78:C7:T1:L244",
+          "path_state": "standby",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200f80000624a93703a74e0cd04884d750009c34e466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C3:T0:L248",
+          "name": "vmhba78:C3:T0:L248",
+          "path_state": "active",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200f80000624a93703a74e0cd04884d750009c34e466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C1:T1:L244",
+          "name": "vmhba78:C1:T1:L244",
+          "path_state": "standby",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200f80000624a93703a74e0cd04884d750009c34e466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C6:T1:L244",
+          "name": "vmhba78:C6:T1:L244",
+          "path_state": "standby",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200f80000624a93703a74e0cd04884d750009c34e466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C2:T0:L248",
+          "name": "vmhba78:C2:T0:L248",
+          "path_state": "active",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200f80000624a93703a74e0cd04884d750009c34e466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C7:T0:L248",
+          "name": "vmhba78:C7:T0:L248",
+          "path_state": "active",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200f80000624a93703a74e0cd04884d750009c34e466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C0:T1:L244",
+          "name": "vmhba78:C0:T1:L244",
+          "path_state": "standby",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200f80000624a93703a74e0cd04884d750009c34e466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C5:T1:L244",
+          "name": "vmhba78:C5:T1:L244",
+          "path_state": "standby",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200f80000624a93703a74e0cd04884d750009c34e466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C1:T0:L248",
+          "name": "vmhba78:C1:T0:L248",
+          "path_state": "active",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200f80000624a93703a74e0cd04884d750009c34e466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C6:T0:L248",
+          "name": "vmhba78:C6:T0:L248",
+          "path_state": "active",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200f80000624a93703a74e0cd04884d750009c34e466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d",
+          "iscsi_transport_alias": ""
+        }
+      ],
+      "policy": {
+        "name": "VMW_PSP_RR",
+        "preferred_path_key": "N/A"
+      }
+    },
+    {
+      "key": "key-vim.host.MultipathInfo.LogicalUnit-0200fe0000624a93703a74e0cd04884d75000113e9466c61736841",
+      "id": "0200fe0000624a93703a74e0cd04884d75000113e9466c61736841",
+      "lun_type": "N/A",
+      "device_name": "/vmfs/devices/disks/naa.624a93703a74e0cd04884d75000113e9",
+      "canonical_name": "naa.624a93703a74e0cd04884d75000113e9",
+      "vendor": "PURE    ",
+      "model": "FlashArray      ",
+      "lun_type_from_scsi": "disk",
+      "queue_depth": 128,
+      "paths": [
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C0:T1:L254",
+          "name": "vmhba78:C0:T1:L254",
+          "path_state": "active",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200fe0000624a93703a74e0cd04884d75000113e9466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C5:T1:L254",
+          "name": "vmhba78:C5:T1:L254",
+          "path_state": "active",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200fe0000624a93703a74e0cd04884d75000113e9466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C4:T1:L254",
+          "name": "vmhba78:C4:T1:L254",
+          "path_state": "active",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200fe0000624a93703a74e0cd04884d75000113e9466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C3:T1:L254",
+          "name": "vmhba78:C3:T1:L254",
+          "path_state": "active",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200fe0000624a93703a74e0cd04884d75000113e9466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C2:T1:L254",
+          "name": "vmhba78:C2:T1:L254",
+          "path_state": "active",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200fe0000624a93703a74e0cd04884d75000113e9466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C7:T1:L254",
+          "name": "vmhba78:C7:T1:L254",
+          "path_state": "active",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200fe0000624a93703a74e0cd04884d75000113e9466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C1:T1:L254",
+          "name": "vmhba78:C1:T1:L254",
+          "path_state": "active",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200fe0000624a93703a74e0cd04884d75000113e9466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C6:T1:L254",
+          "name": "vmhba78:C6:T1:L254",
+          "path_state": "active",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200fe0000624a93703a74e0cd04884d75000113e9466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18",
+          "iscsi_transport_alias": ""
+        }
+      ],
+      "policy": {
+        "name": "VMW_PSP_RR",
+        "preferred_path_key": "N/A"
+      }
+    },
+    {
+      "key": "key-vim.host.MultipathInfo.LogicalUnit-0200fa0000624a93703a74e0cd04884d7500012c47466c61736841",
+      "id": "0200fa0000624a93703a74e0cd04884d7500012c47466c61736841",
+      "lun_type": "N/A",
+      "device_name": "/vmfs/devices/disks/naa.624a93703a74e0cd04884d7500012c47",
+      "canonical_name": "naa.624a93703a74e0cd04884d7500012c47",
+      "vendor": "PURE    ",
+      "model": "FlashArray      ",
+      "lun_type_from_scsi": "disk",
+      "queue_depth": 128,
+      "paths": [
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C4:T1:L246",
+          "name": "vmhba78:C4:T1:L246",
+          "path_state": "standby",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200fa0000624a93703a74e0cd04884d7500012c47466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C1:T0:L250",
+          "name": "vmhba78:C1:T0:L250",
+          "path_state": "active",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200fa0000624a93703a74e0cd04884d7500012c47466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C6:T0:L250",
+          "name": "vmhba78:C6:T0:L250",
+          "path_state": "active",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200fa0000624a93703a74e0cd04884d7500012c47466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C3:T1:L246",
+          "name": "vmhba78:C3:T1:L246",
+          "path_state": "standby",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200fa0000624a93703a74e0cd04884d7500012c47466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C0:T0:L250",
+          "name": "vmhba78:C0:T0:L250",
+          "path_state": "active",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200fa0000624a93703a74e0cd04884d7500012c47466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C5:T0:L250",
+          "name": "vmhba78:C5:T0:L250",
+          "path_state": "active",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200fa0000624a93703a74e0cd04884d7500012c47466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C2:T1:L246",
+          "name": "vmhba78:C2:T1:L246",
+          "path_state": "standby",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200fa0000624a93703a74e0cd04884d7500012c47466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C7:T1:L246",
+          "name": "vmhba78:C7:T1:L246",
+          "path_state": "standby",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200fa0000624a93703a74e0cd04884d7500012c47466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C4:T0:L250",
+          "name": "vmhba78:C4:T0:L250",
+          "path_state": "active",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200fa0000624a93703a74e0cd04884d7500012c47466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C1:T1:L246",
+          "name": "vmhba78:C1:T1:L246",
+          "path_state": "standby",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200fa0000624a93703a74e0cd04884d7500012c47466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C6:T1:L246",
+          "name": "vmhba78:C6:T1:L246",
+          "path_state": "standby",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200fa0000624a93703a74e0cd04884d7500012c47466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C3:T0:L250",
+          "name": "vmhba78:C3:T0:L250",
+          "path_state": "active",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200fa0000624a93703a74e0cd04884d7500012c47466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C0:T1:L246",
+          "name": "vmhba78:C0:T1:L246",
+          "path_state": "standby",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200fa0000624a93703a74e0cd04884d7500012c47466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C5:T1:L246",
+          "name": "vmhba78:C5:T1:L246",
+          "path_state": "standby",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200fa0000624a93703a74e0cd04884d7500012c47466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C2:T0:L250",
+          "name": "vmhba78:C2:T0:L250",
+          "path_state": "active",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200fa0000624a93703a74e0cd04884d7500012c47466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C7:T0:L250",
+          "name": "vmhba78:C7:T0:L250",
+          "path_state": "active",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200fa0000624a93703a74e0cd04884d7500012c47466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d",
+          "iscsi_transport_alias": ""
+        }
+      ],
+      "policy": {
+        "name": "VMW_PSP_RR",
+        "preferred_path_key": "N/A"
+      }
+    },
+    {
+      "key": "key-vim.host.MultipathInfo.LogicalUnit-0200fb0000624a93703a74e0cd04884d7500012c48466c61736841",
+      "id": "0200fb0000624a93703a74e0cd04884d7500012c48466c61736841",
+      "lun_type": "N/A",
+      "device_name": "/vmfs/devices/disks/naa.624a93703a74e0cd04884d7500012c48",
+      "canonical_name": "naa.624a93703a74e0cd04884d7500012c48",
+      "vendor": "PURE    ",
+      "model": "FlashArray      ",
+      "lun_type_from_scsi": "disk",
+      "queue_depth": 128,
+      "paths": [
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C4:T1:L247",
+          "name": "vmhba78:C4:T1:L247",
+          "path_state": "standby",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200fb0000624a93703a74e0cd04884d7500012c48466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C1:T0:L251",
+          "name": "vmhba78:C1:T0:L251",
+          "path_state": "active",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200fb0000624a93703a74e0cd04884d7500012c48466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C6:T0:L251",
+          "name": "vmhba78:C6:T0:L251",
+          "path_state": "active",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200fb0000624a93703a74e0cd04884d7500012c48466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C3:T1:L247",
+          "name": "vmhba78:C3:T1:L247",
+          "path_state": "standby",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200fb0000624a93703a74e0cd04884d7500012c48466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C0:T0:L251",
+          "name": "vmhba78:C0:T0:L251",
+          "path_state": "active",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200fb0000624a93703a74e0cd04884d7500012c48466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C5:T0:L251",
+          "name": "vmhba78:C5:T0:L251",
+          "path_state": "active",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200fb0000624a93703a74e0cd04884d7500012c48466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C2:T1:L247",
+          "name": "vmhba78:C2:T1:L247",
+          "path_state": "standby",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200fb0000624a93703a74e0cd04884d7500012c48466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C7:T1:L247",
+          "name": "vmhba78:C7:T1:L247",
+          "path_state": "standby",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200fb0000624a93703a74e0cd04884d7500012c48466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C4:T0:L251",
+          "name": "vmhba78:C4:T0:L251",
+          "path_state": "active",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200fb0000624a93703a74e0cd04884d7500012c48466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C1:T1:L247",
+          "name": "vmhba78:C1:T1:L247",
+          "path_state": "standby",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200fb0000624a93703a74e0cd04884d7500012c48466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C6:T1:L247",
+          "name": "vmhba78:C6:T1:L247",
+          "path_state": "standby",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200fb0000624a93703a74e0cd04884d7500012c48466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C3:T0:L251",
+          "name": "vmhba78:C3:T0:L251",
+          "path_state": "active",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200fb0000624a93703a74e0cd04884d7500012c48466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C0:T1:L247",
+          "name": "vmhba78:C0:T1:L247",
+          "path_state": "standby",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200fb0000624a93703a74e0cd04884d7500012c48466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C5:T1:L247",
+          "name": "vmhba78:C5:T1:L247",
+          "path_state": "standby",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200fb0000624a93703a74e0cd04884d7500012c48466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C2:T0:L251",
+          "name": "vmhba78:C2:T0:L251",
+          "path_state": "active",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200fb0000624a93703a74e0cd04884d7500012c48466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C7:T0:L251",
+          "name": "vmhba78:C7:T0:L251",
+          "path_state": "active",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200fb0000624a93703a74e0cd04884d7500012c48466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d",
+          "iscsi_transport_alias": ""
+        }
+      ],
+      "policy": {
+        "name": "VMW_PSP_RR",
+        "preferred_path_key": "N/A"
+      }
+    },
+    {
+      "key": "key-vim.host.MultipathInfo.LogicalUnit-0200fc0000624a93703a74e0cd04884d7500012c49466c61736841",
+      "id": "0200fc0000624a93703a74e0cd04884d7500012c49466c61736841",
+      "lun_type": "N/A",
+      "device_name": "/vmfs/devices/disks/naa.624a93703a74e0cd04884d7500012c49",
+      "canonical_name": "naa.624a93703a74e0cd04884d7500012c49",
+      "vendor": "PURE    ",
+      "model": "FlashArray      ",
+      "lun_type_from_scsi": "disk",
+      "queue_depth": 128,
+      "paths": [
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C4:T1:L248",
+          "name": "vmhba78:C4:T1:L248",
+          "path_state": "standby",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200fc0000624a93703a74e0cd04884d7500012c49466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C1:T0:L252",
+          "name": "vmhba78:C1:T0:L252",
+          "path_state": "active",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200fc0000624a93703a74e0cd04884d7500012c49466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C6:T0:L252",
+          "name": "vmhba78:C6:T0:L252",
+          "path_state": "active",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200fc0000624a93703a74e0cd04884d7500012c49466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C3:T1:L248",
+          "name": "vmhba78:C3:T1:L248",
+          "path_state": "standby",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200fc0000624a93703a74e0cd04884d7500012c49466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C0:T0:L252",
+          "name": "vmhba78:C0:T0:L252",
+          "path_state": "active",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200fc0000624a93703a74e0cd04884d7500012c49466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C5:T0:L252",
+          "name": "vmhba78:C5:T0:L252",
+          "path_state": "active",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200fc0000624a93703a74e0cd04884d7500012c49466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C2:T1:L248",
+          "name": "vmhba78:C2:T1:L248",
+          "path_state": "standby",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200fc0000624a93703a74e0cd04884d7500012c49466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C7:T1:L248",
+          "name": "vmhba78:C7:T1:L248",
+          "path_state": "standby",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200fc0000624a93703a74e0cd04884d7500012c49466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C4:T0:L252",
+          "name": "vmhba78:C4:T0:L252",
+          "path_state": "active",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200fc0000624a93703a74e0cd04884d7500012c49466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C1:T1:L248",
+          "name": "vmhba78:C1:T1:L248",
+          "path_state": "standby",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200fc0000624a93703a74e0cd04884d7500012c49466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C6:T1:L248",
+          "name": "vmhba78:C6:T1:L248",
+          "path_state": "standby",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200fc0000624a93703a74e0cd04884d7500012c49466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C3:T0:L252",
+          "name": "vmhba78:C3:T0:L252",
+          "path_state": "active",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200fc0000624a93703a74e0cd04884d7500012c49466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C0:T1:L248",
+          "name": "vmhba78:C0:T1:L248",
+          "path_state": "standby",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200fc0000624a93703a74e0cd04884d7500012c49466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C5:T1:L248",
+          "name": "vmhba78:C5:T1:L248",
+          "path_state": "standby",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200fc0000624a93703a74e0cd04884d7500012c49466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C2:T0:L252",
+          "name": "vmhba78:C2:T0:L252",
+          "path_state": "active",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200fc0000624a93703a74e0cd04884d7500012c49466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C7:T0:L252",
+          "name": "vmhba78:C7:T0:L252",
+          "path_state": "active",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200fc0000624a93703a74e0cd04884d7500012c49466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d",
+          "iscsi_transport_alias": ""
+        }
+      ],
+      "policy": {
+        "name": "VMW_PSP_RR",
+        "preferred_path_key": "N/A"
+      }
+    },
+    {
+      "key": "key-vim.host.MultipathInfo.LogicalUnit-0200fd0000624a93703a74e0cd04884d75000113f3466c61736841",
+      "id": "0200fd0000624a93703a74e0cd04884d75000113f3466c61736841",
+      "lun_type": "N/A",
+      "device_name": "/vmfs/devices/disks/naa.624a93703a74e0cd04884d75000113f3",
+      "canonical_name": "naa.624a93703a74e0cd04884d75000113f3",
+      "vendor": "PURE    ",
+      "model": "FlashArray      ",
+      "lun_type_from_scsi": "disk",
+      "queue_depth": 128,
+      "paths": [
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C0:T1:L253",
+          "name": "vmhba78:C0:T1:L253",
+          "path_state": "standby",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200fd0000624a93703a74e0cd04884d75000113f3466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C5:T1:L253",
+          "name": "vmhba78:C5:T1:L253",
+          "path_state": "standby",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200fd0000624a93703a74e0cd04884d75000113f3466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C1:T0:L253",
+          "name": "vmhba78:C1:T0:L253",
+          "path_state": "active",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200fd0000624a93703a74e0cd04884d75000113f3466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C6:T0:L253",
+          "name": "vmhba78:C6:T0:L253",
+          "path_state": "active",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200fd0000624a93703a74e0cd04884d75000113f3466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C4:T1:L253",
+          "name": "vmhba78:C4:T1:L253",
+          "path_state": "standby",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200fd0000624a93703a74e0cd04884d75000113f3466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C0:T0:L253",
+          "name": "vmhba78:C0:T0:L253",
+          "path_state": "active",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200fd0000624a93703a74e0cd04884d75000113f3466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C5:T0:L253",
+          "name": "vmhba78:C5:T0:L253",
+          "path_state": "active",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200fd0000624a93703a74e0cd04884d75000113f3466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C3:T1:L253",
+          "name": "vmhba78:C3:T1:L253",
+          "path_state": "standby",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200fd0000624a93703a74e0cd04884d75000113f3466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C4:T0:L253",
+          "name": "vmhba78:C4:T0:L253",
+          "path_state": "active",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200fd0000624a93703a74e0cd04884d75000113f3466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C2:T1:L253",
+          "name": "vmhba78:C2:T1:L253",
+          "path_state": "standby",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200fd0000624a93703a74e0cd04884d75000113f3466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C7:T1:L253",
+          "name": "vmhba78:C7:T1:L253",
+          "path_state": "standby",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200fd0000624a93703a74e0cd04884d75000113f3466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C3:T0:L253",
+          "name": "vmhba78:C3:T0:L253",
+          "path_state": "active",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200fd0000624a93703a74e0cd04884d75000113f3466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C1:T1:L253",
+          "name": "vmhba78:C1:T1:L253",
+          "path_state": "standby",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200fd0000624a93703a74e0cd04884d75000113f3466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C6:T1:L253",
+          "name": "vmhba78:C6:T1:L253",
+          "path_state": "standby",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200fd0000624a93703a74e0cd04884d75000113f3466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C2:T0:L253",
+          "name": "vmhba78:C2:T0:L253",
+          "path_state": "active",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200fd0000624a93703a74e0cd04884d75000113f3466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d",
+          "iscsi_transport_alias": ""
+        },
+        {
+          "key": "key-vim.host.MultipathInfo.Path-vmhba78:C7:T0:L253",
+          "name": "vmhba78:C7:T0:L253",
+          "path_state": "active",
+          "adapter_key": "key-vim.host.InternetScsiHba-vmhba78",
+          "lun_target_key": "key-vim.host.MultipathInfo.LogicalUnit-0200fd0000624a93703a74e0cd04884d75000113f3466c61736841",
+          "transport_type": "vim.host.InternetScsiTargetTransport",
+          "iscsi_transport_name": "iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d",
+          "iscsi_transport_alias": ""
+        }
+      ],
+      "policy": {
+        "name": "VMW_PSP_RR",
+        "preferred_path_key": "N/A"
+      }
+    }
+  ]
+}
+
+--- Storage Adapters (HBAs) for vm-esx-pp-03.bcaexpertise.org ---
+  Device: vmhba32, Type: vim.host.BlockHba, Model: USB Storage Controller, Driver: vmkusb
+  Device: vmhba64, Type: vim.host.InternetScsiHba, Model: QLogic 57810 10 Gigabit Ethernet Adapter, Driver: qfle3i
+  Device: vmhba65, Type: vim.host.InternetScsiHba, Model: QLogic 57810 10 Gigabit Ethernet Adapter, Driver: qfle3i
+  Device: vmhba66, Type: vim.host.InternetScsiHba, Model: QLogic 57810 10 Gigabit Ethernet Adapter, Driver: qfle3i
+  Device: vmhba67, Type: vim.host.InternetScsiHba, Model: QLogic 57810 10 Gigabit Ethernet Adapter, Driver: qfle3i
+  Device: vmhba68, Type: vim.host.InternetScsiHba, Model: QLogic 57840 10 Gigabit Ethernet Adapter, Driver: qfle3i
+  Device: vmhba69, Type: vim.host.FibreChannelOverEthernetHba, Model: QLogic Inc. FCoE Adapter, Driver: qfle3f
+  Device: vmhba70, Type: vim.host.InternetScsiHba, Model: QLogic 57840 10 Gigabit Ethernet Adapter, Driver: qfle3i
+  Device: vmhba71, Type: vim.host.FibreChannelOverEthernetHba, Model: QLogic Inc. FCoE Adapter, Driver: qfle3f
+  Device: vmhba72, Type: vim.host.InternetScsiHba, Model: QLogic 57840 10 Gigabit Ethernet Adapter, Driver: qfle3i
+  Device: vmhba73, Type: vim.host.FibreChannelOverEthernetHba, Model: QLogic Inc. FCoE Adapter, Driver: qfle3f
+  Device: vmhba74, Type: vim.host.InternetScsiHba, Model: QLogic 57840 10 Gigabit Ethernet Adapter, Driver: qfle3i
+  Device: vmhba75, Type: vim.host.FibreChannelOverEthernetHba, Model: QLogic Inc. FCoE Adapter, Driver: qfle3f
+  Device: vmhba76, Type: vim.host.InternetScsiHba, Model: QLogic 57810 10 Gigabit Ethernet Adapter, Driver: qfle3i
+  Device: vmhba77, Type: vim.host.InternetScsiHba, Model: QLogic 57810 10 Gigabit Ethernet Adapter, Driver: qfle3i
+  Device: vmhba78, Type: vim.host.InternetScsiHba, Model: iSCSI Software Adapter, Driver: iscsi_vmk
+
+--- Logical Units (LUNs) & Multipathing for vm-esx-pp-03.bcaexpertise.org ---
+  LUN ID: 0200f90000624a93703a74e0cd04884d75000410c4466c61736841, Device: /vmfs/devices/disks/naa.624a93703a74e0cd04884d75000410c4, Vendor: PURE    , Model: FlashArray      
+    Policy: VMW_PSP_RR, Preferred Path: N/A
+    Paths (16 total):
+      - Name: vmhba78:C4:T1:L245 (State: standby) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18
+      - Name: vmhba78:C0:T0:L249 (State: active) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d
+      - Name: vmhba78:C5:T0:L249 (State: active) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d
+      - Name: vmhba78:C3:T1:L245 (State: standby) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18
+      - Name: vmhba78:C4:T0:L249 (State: active) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d
+      - Name: vmhba78:C2:T1:L245 (State: standby) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18
+      - Name: vmhba78:C7:T1:L245 (State: standby) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18
+      - Name: vmhba78:C3:T0:L249 (State: active) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d
+      - Name: vmhba78:C1:T1:L245 (State: standby) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18
+      - Name: vmhba78:C6:T1:L245 (State: standby) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18
+      - Name: vmhba78:C2:T0:L249 (State: active) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d
+      - Name: vmhba78:C7:T0:L249 (State: active) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d
+      - Name: vmhba78:C0:T1:L245 (State: standby) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18
+      - Name: vmhba78:C5:T1:L245 (State: standby) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18
+      - Name: vmhba78:C1:T0:L249 (State: active) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d
+      - Name: vmhba78:C6:T0:L249 (State: active) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d
+  LUN ID: 0200f70000624a93703a74e0cd04884d7500013dc6466c61736841, Device: /vmfs/devices/disks/naa.624a93703a74e0cd04884d7500013dc6, Vendor: PURE    , Model: FlashArray      
+    Policy: VMW_PSP_RR, Preferred Path: N/A
+    Paths (16 total):
+      - Name: vmhba78:C0:T1:L252 (State: standby) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18
+      - Name: vmhba78:C0:T0:L247 (State: active) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d
+      - Name: vmhba78:C5:T1:L252 (State: standby) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18
+      - Name: vmhba78:C5:T0:L247 (State: active) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d
+      - Name: vmhba78:C4:T1:L252 (State: standby) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18
+      - Name: vmhba78:C4:T0:L247 (State: active) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d
+      - Name: vmhba78:C3:T1:L252 (State: standby) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18
+      - Name: vmhba78:C3:T0:L247 (State: active) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d
+      - Name: vmhba78:C2:T1:L252 (State: standby) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18
+      - Name: vmhba78:C2:T0:L247 (State: active) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d
+      - Name: vmhba78:C7:T1:L252 (State: standby) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18
+      - Name: vmhba78:C7:T0:L247 (State: active) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d
+      - Name: vmhba78:C1:T1:L252 (State: standby) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18
+      - Name: vmhba78:C1:T0:L247 (State: active) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d
+      - Name: vmhba78:C6:T1:L252 (State: standby) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18
+      - Name: vmhba78:C6:T0:L247 (State: active) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d
+  LUN ID: 0200f30000624a93703a74e0cd04884d75000d67c0466c61736841, Device: /vmfs/devices/disks/naa.624a93703a74e0cd04884d75000d67c0, Vendor: PURE    , Model: FlashArray      
+    Policy: VMW_PSP_RR, Preferred Path: N/A
+    Paths (16 total):
+      - Name: vmhba78:C4:T1:L243 (State: standby) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18
+      - Name: vmhba78:C0:T0:L243 (State: active) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d
+      - Name: vmhba78:C5:T0:L243 (State: active) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d
+      - Name: vmhba78:C3:T1:L243 (State: standby) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18
+      - Name: vmhba78:C4:T0:L243 (State: active) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d
+      - Name: vmhba78:C2:T1:L243 (State: standby) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18
+      - Name: vmhba78:C7:T1:L243 (State: standby) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18
+      - Name: vmhba78:C3:T0:L243 (State: active) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d
+      - Name: vmhba78:C1:T1:L243 (State: standby) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18
+      - Name: vmhba78:C6:T1:L243 (State: standby) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18
+      - Name: vmhba78:C2:T0:L243 (State: active) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d
+      - Name: vmhba78:C7:T0:L243 (State: active) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d
+      - Name: vmhba78:C0:T1:L243 (State: standby) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18
+      - Name: vmhba78:C5:T1:L243 (State: standby) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18
+      - Name: vmhba78:C1:T0:L243 (State: active) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d
+      - Name: vmhba78:C6:T0:L243 (State: active) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d
+  LUN ID: 0200f60000624a93703a74e0cd04884d7500039c6b466c61736841, Device: /vmfs/devices/disks/naa.624a93703a74e0cd04884d7500039c6b, Vendor: PURE    , Model: FlashArray      
+    Policy: VMW_PSP_RR, Preferred Path: N/A
+    Paths (16 total):
+      - Name: vmhba78:C0:T1:L251 (State: standby) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18
+      - Name: vmhba78:C0:T0:L246 (State: active) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d
+      - Name: vmhba78:C5:T1:L251 (State: standby) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18
+      - Name: vmhba78:C5:T0:L246 (State: active) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d
+      - Name: vmhba78:C4:T1:L251 (State: standby) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18
+      - Name: vmhba78:C4:T0:L246 (State: active) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d
+      - Name: vmhba78:C3:T1:L251 (State: standby) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18
+      - Name: vmhba78:C3:T0:L246 (State: active) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d
+      - Name: vmhba78:C2:T1:L251 (State: standby) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18
+      - Name: vmhba78:C2:T0:L246 (State: active) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d
+      - Name: vmhba78:C7:T1:L251 (State: standby) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18
+      - Name: vmhba78:C7:T0:L246 (State: active) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d
+      - Name: vmhba78:C1:T1:L251 (State: standby) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18
+      - Name: vmhba78:C1:T0:L246 (State: active) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d
+      - Name: vmhba78:C6:T1:L251 (State: standby) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18
+      - Name: vmhba78:C6:T0:L246 (State: active) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d
+  LUN ID: 0200f50000624a93703a74e0cd04884d750006167b466c61736841, Device: /vmfs/devices/disks/naa.624a93703a74e0cd04884d750006167b, Vendor: PURE    , Model: FlashArray      
+    Policy: VMW_PSP_RR, Preferred Path: N/A
+    Paths (16 total):
+      - Name: vmhba78:C0:T1:L250 (State: standby) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18
+      - Name: vmhba78:C0:T0:L245 (State: active) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d
+      - Name: vmhba78:C5:T1:L250 (State: standby) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18
+      - Name: vmhba78:C5:T0:L245 (State: active) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d
+      - Name: vmhba78:C4:T1:L250 (State: standby) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18
+      - Name: vmhba78:C4:T0:L245 (State: active) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d
+      - Name: vmhba78:C3:T1:L250 (State: standby) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18
+      - Name: vmhba78:C3:T0:L245 (State: active) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d
+      - Name: vmhba78:C2:T1:L250 (State: standby) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18
+      - Name: vmhba78:C2:T0:L245 (State: active) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d
+      - Name: vmhba78:C7:T1:L250 (State: standby) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18
+      - Name: vmhba78:C7:T0:L245 (State: active) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d
+      - Name: vmhba78:C1:T1:L250 (State: standby) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18
+      - Name: vmhba78:C1:T0:L245 (State: active) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d
+      - Name: vmhba78:C6:T1:L250 (State: standby) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18
+      - Name: vmhba78:C6:T0:L245 (State: active) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d
+  LUN ID: 0200f40000624a93703a74e0cd04884d75000872f7466c61736841, Device: /vmfs/devices/disks/naa.624a93703a74e0cd04884d75000872f7, Vendor: PURE    , Model: FlashArray      
+    Policy: VMW_PSP_RR, Preferred Path: N/A
+    Paths (16 total):
+      - Name: vmhba78:C4:T1:L249 (State: standby) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18
+      - Name: vmhba78:C0:T0:L244 (State: active) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d
+      - Name: vmhba78:C5:T0:L244 (State: active) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d
+      - Name: vmhba78:C3:T1:L249 (State: standby) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18
+      - Name: vmhba78:C4:T0:L244 (State: active) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d
+      - Name: vmhba78:C2:T1:L249 (State: standby) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18
+      - Name: vmhba78:C7:T1:L249 (State: standby) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18
+      - Name: vmhba78:C3:T0:L244 (State: active) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d
+      - Name: vmhba78:C1:T1:L249 (State: standby) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18
+      - Name: vmhba78:C6:T1:L249 (State: standby) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18
+      - Name: vmhba78:C2:T0:L244 (State: active) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d
+      - Name: vmhba78:C7:T0:L244 (State: active) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d
+      - Name: vmhba78:C0:T1:L249 (State: standby) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18
+      - Name: vmhba78:C5:T1:L249 (State: standby) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18
+      - Name: vmhba78:C1:T0:L244 (State: active) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d
+      - Name: vmhba78:C6:T0:L244 (State: active) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d
+  LUN ID: 0200fe0000624a9370fd48da0d949423ea000113e8466c61736841, Device: /vmfs/devices/disks/naa.624a9370fd48da0d949423ea000113e8, Vendor: PURE    , Model: FlashArray      
+    Policy: VMW_PSP_RR, Preferred Path: N/A
+    Paths (8 total):
+      - Name: vmhba78:C1:T0:L254 (State: active) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d
+      - Name: vmhba78:C6:T0:L254 (State: active) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d
+      - Name: vmhba78:C0:T0:L254 (State: active) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d
+      - Name: vmhba78:C5:T0:L254 (State: active) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d
+      - Name: vmhba78:C4:T0:L254 (State: active) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d
+      - Name: vmhba78:C3:T0:L254 (State: active) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d
+      - Name: vmhba78:C2:T0:L254 (State: active) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d
+      - Name: vmhba78:C7:T0:L254 (State: active) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d
+  LUN ID: 01000000003239323033303038323832303134303030555342332e30, Device: /vmfs/devices/disks/mpx.vmhba32:C0:T0:L0, Vendor: Generic , Model: USB3.0-CRW      
+    Policy: VMW_PSP_FIXED, Preferred Path: N/A
+    Paths (1 total):
+      - Name: vmhba32:C0:T0:L0 (State: active) via Adapter Key: key-vim.host.BlockHba-vmhba32, Transport Type: vim.host.BlockAdapterTargetTransport
+  LUN ID: 0200f80000624a93703a74e0cd04884d750009c34e466c61736841, Device: /vmfs/devices/disks/naa.624a93703a74e0cd04884d750009c34e, Vendor: PURE    , Model: FlashArray      
+    Policy: VMW_PSP_RR, Preferred Path: N/A
+    Paths (16 total):
+      - Name: vmhba78:C4:T1:L244 (State: standby) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18
+      - Name: vmhba78:C0:T0:L248 (State: active) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d
+      - Name: vmhba78:C5:T0:L248 (State: active) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d
+      - Name: vmhba78:C3:T1:L244 (State: standby) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18
+      - Name: vmhba78:C4:T0:L248 (State: active) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d
+      - Name: vmhba78:C2:T1:L244 (State: standby) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18
+      - Name: vmhba78:C7:T1:L244 (State: standby) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18
+      - Name: vmhba78:C3:T0:L248 (State: active) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d
+      - Name: vmhba78:C1:T1:L244 (State: standby) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18
+      - Name: vmhba78:C6:T1:L244 (State: standby) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18
+      - Name: vmhba78:C2:T0:L248 (State: active) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d
+      - Name: vmhba78:C7:T0:L248 (State: active) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d
+      - Name: vmhba78:C0:T1:L244 (State: standby) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18
+      - Name: vmhba78:C5:T1:L244 (State: standby) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18
+      - Name: vmhba78:C1:T0:L248 (State: active) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d
+      - Name: vmhba78:C6:T0:L248 (State: active) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d
+  LUN ID: 0200fe0000624a93703a74e0cd04884d75000113e9466c61736841, Device: /vmfs/devices/disks/naa.624a93703a74e0cd04884d75000113e9, Vendor: PURE    , Model: FlashArray      
+    Policy: VMW_PSP_RR, Preferred Path: N/A
+    Paths (8 total):
+      - Name: vmhba78:C0:T1:L254 (State: active) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18
+      - Name: vmhba78:C5:T1:L254 (State: active) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18
+      - Name: vmhba78:C4:T1:L254 (State: active) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18
+      - Name: vmhba78:C3:T1:L254 (State: active) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18
+      - Name: vmhba78:C2:T1:L254 (State: active) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18
+      - Name: vmhba78:C7:T1:L254 (State: active) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18
+      - Name: vmhba78:C1:T1:L254 (State: active) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18
+      - Name: vmhba78:C6:T1:L254 (State: active) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18
+  LUN ID: 0200fa0000624a93703a74e0cd04884d7500012c47466c61736841, Device: /vmfs/devices/disks/naa.624a93703a74e0cd04884d7500012c47, Vendor: PURE    , Model: FlashArray      
+    Policy: VMW_PSP_RR, Preferred Path: N/A
+    Paths (16 total):
+      - Name: vmhba78:C4:T1:L246 (State: standby) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18
+      - Name: vmhba78:C1:T0:L250 (State: active) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d
+      - Name: vmhba78:C6:T0:L250 (State: active) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d
+      - Name: vmhba78:C3:T1:L246 (State: standby) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18
+      - Name: vmhba78:C0:T0:L250 (State: active) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d
+      - Name: vmhba78:C5:T0:L250 (State: active) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d
+      - Name: vmhba78:C2:T1:L246 (State: standby) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18
+      - Name: vmhba78:C7:T1:L246 (State: standby) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18
+      - Name: vmhba78:C4:T0:L250 (State: active) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d
+      - Name: vmhba78:C1:T1:L246 (State: standby) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18
+      - Name: vmhba78:C6:T1:L246 (State: standby) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18
+      - Name: vmhba78:C3:T0:L250 (State: active) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d
+      - Name: vmhba78:C0:T1:L246 (State: standby) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18
+      - Name: vmhba78:C5:T1:L246 (State: standby) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18
+      - Name: vmhba78:C2:T0:L250 (State: active) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d
+      - Name: vmhba78:C7:T0:L250 (State: active) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d
+  LUN ID: 0200fb0000624a93703a74e0cd04884d7500012c48466c61736841, Device: /vmfs/devices/disks/naa.624a93703a74e0cd04884d7500012c48, Vendor: PURE    , Model: FlashArray      
+    Policy: VMW_PSP_RR, Preferred Path: N/A
+    Paths (16 total):
+      - Name: vmhba78:C4:T1:L247 (State: standby) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18
+      - Name: vmhba78:C1:T0:L251 (State: active) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d
+      - Name: vmhba78:C6:T0:L251 (State: active) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d
+      - Name: vmhba78:C3:T1:L247 (State: standby) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18
+      - Name: vmhba78:C0:T0:L251 (State: active) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d
+      - Name: vmhba78:C5:T0:L251 (State: active) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d
+      - Name: vmhba78:C2:T1:L247 (State: standby) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18
+      - Name: vmhba78:C7:T1:L247 (State: standby) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18
+      - Name: vmhba78:C4:T0:L251 (State: active) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d
+      - Name: vmhba78:C1:T1:L247 (State: standby) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18
+      - Name: vmhba78:C6:T1:L247 (State: standby) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18
+      - Name: vmhba78:C3:T0:L251 (State: active) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d
+      - Name: vmhba78:C0:T1:L247 (State: standby) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18
+      - Name: vmhba78:C5:T1:L247 (State: standby) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18
+      - Name: vmhba78:C2:T0:L251 (State: active) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d
+      - Name: vmhba78:C7:T0:L251 (State: active) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d
+  LUN ID: 0200fc0000624a93703a74e0cd04884d7500012c49466c61736841, Device: /vmfs/devices/disks/naa.624a93703a74e0cd04884d7500012c49, Vendor: PURE    , Model: FlashArray      
+    Policy: VMW_PSP_RR, Preferred Path: N/A
+    Paths (16 total):
+      - Name: vmhba78:C4:T1:L248 (State: standby) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18
+      - Name: vmhba78:C1:T0:L252 (State: active) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d
+      - Name: vmhba78:C6:T0:L252 (State: active) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d
+      - Name: vmhba78:C3:T1:L248 (State: standby) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18
+      - Name: vmhba78:C0:T0:L252 (State: active) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d
+      - Name: vmhba78:C5:T0:L252 (State: active) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d
+      - Name: vmhba78:C2:T1:L248 (State: standby) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18
+      - Name: vmhba78:C7:T1:L248 (State: standby) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18
+      - Name: vmhba78:C4:T0:L252 (State: active) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d
+      - Name: vmhba78:C1:T1:L248 (State: standby) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18
+      - Name: vmhba78:C6:T1:L248 (State: standby) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18
+      - Name: vmhba78:C3:T0:L252 (State: active) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d
+      - Name: vmhba78:C0:T1:L248 (State: standby) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18
+      - Name: vmhba78:C5:T1:L248 (State: standby) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18
+      - Name: vmhba78:C2:T0:L252 (State: active) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d
+      - Name: vmhba78:C7:T0:L252 (State: active) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d
+  LUN ID: 0200fd0000624a93703a74e0cd04884d75000113f3466c61736841, Device: /vmfs/devices/disks/naa.624a93703a74e0cd04884d75000113f3, Vendor: PURE    , Model: FlashArray      
+    Policy: VMW_PSP_RR, Preferred Path: N/A
+    Paths (16 total):
+      - Name: vmhba78:C0:T1:L253 (State: standby) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18
+      - Name: vmhba78:C5:T1:L253 (State: standby) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18
+      - Name: vmhba78:C1:T0:L253 (State: active) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d
+      - Name: vmhba78:C6:T0:L253 (State: active) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d
+      - Name: vmhba78:C4:T1:L253 (State: standby) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18
+      - Name: vmhba78:C0:T0:L253 (State: active) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d
+      - Name: vmhba78:C5:T0:L253 (State: active) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d
+      - Name: vmhba78:C3:T1:L253 (State: standby) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18
+      - Name: vmhba78:C4:T0:L253 (State: active) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d
+      - Name: vmhba78:C2:T1:L253 (State: standby) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18
+      - Name: vmhba78:C7:T1:L253 (State: standby) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18
+      - Name: vmhba78:C3:T0:L253 (State: active) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d
+      - Name: vmhba78:C1:T1:L253 (State: standby) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18
+      - Name: vmhba78:C6:T1:L253 (State: standby) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.4aba11a7f55e4b18
+      - Name: vmhba78:C2:T0:L253 (State: active) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d
+      - Name: vmhba78:C7:T0:L253 (State: active) via Adapter Key: key-vim.host.InternetScsiHba-vmhba78, Transport Type: vim.host.InternetScsiTargetTransport, Details: iSCSI Name: iqn.2010-06.com.purestorage:flasharray.554a6e209065cf6d
+
+Disconnecting from vCenter Server...
+Successfully disconnected.
+Running vsphere_collector.py directly for data export...
+
+Connecting to vm-vcsa-01.bcaexpertise.org as Administrator@vsphere.local...
+Successfully connected!
+Collecting vCenter details...
+Collecting infrastructure overview (DCs, Clusters, Hosts with Network & Storage)...
+Collecting datastore information...
+Collecting network information (DPGs, SPG summary)...
+Collecting virtual machine information...
+
+Disconnecting from vCenter Server...
+Successfully disconnected.

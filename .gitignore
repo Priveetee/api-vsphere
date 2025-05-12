@@ -1,0 +1,18 @@
+# Environnement virtuel
+.venv/
+
+# Fichiers de cache Python
+__pycache__/
+
+# Fichiers d'environnement
+.env
+
+# Fichiers de sauvegarde
+*.old
+
+# Fichiers de données exportés
+*.json
+
+# Autres fichiers temporaires
+*.tmp
+*.log
