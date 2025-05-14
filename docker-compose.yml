@@ -9,4 +9,14 @@ services:
       - .env
     restart: unless-stopped
     volumes:
-      - ./:/app
+      - ./:/app 
+
+    # --- Optional DNS Configuration ---
+    # If the container has trouble resolving your VCENTER_HOST (especially if it's a local hostname),
+    # you might need to uncomment and configure the DNS settings below.
+    # Replace <your_dns_server_ip> with the IP address of a DNS server that can resolve your VCENTER_HOST.
+    # You can add multiple DNS servers. Public DNS servers like 8.8.8.8 can be used as fallbacks.
+    # See the README.md for more details on VCENTER_HOST resolution.
+    # dns:
+    #   - <ip_of_your_local_dns_server_1>
+    #   - 1.1.1.1

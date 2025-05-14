@@ -7,6 +7,7 @@ from pyVmomi import vim, vmodl
 import traceback
 from datetime import datetime
 import json
+import socket # Ensure this is imported
 
 # Helper function to safely get attributes
 def safe_get(obj, attr_path, default='N/A'):
@@ -535,6 +536,19 @@ def main():
         print("Error: VCENTER_HOST, VCENTER_USER, or VCENTER_PASSWORD not found in .env")
         return None, None
 
+    # --- START OF DIAGNOSTIC BLOCK ---
+    print(f"--- DIAGNOSTIC ---")
+    print(f"Attempting to resolve hostname: '{vcenter_host}' directly using socket.gethostbyname")
+    try:
+        ip_address = socket.gethostbyname(vcenter_host)
+        print(f"Successfully resolved '{vcenter_host}' to IP: {ip_address}")
+    except socket.gaierror as e:
+        print(f"Failed to resolve '{vcenter_host}' using socket.gethostbyname: {e}")
+    except Exception as e:
+        print(f"An unexpected error occurred during socket.gethostbyname for '{vcenter_host}': {e}")
+    print(f"--- END OF DIAGNOSTIC ---")
+    # --- END OF DIAGNOSTIC BLOCK ---
+
     context = None
     if hasattr(ssl, "_create_unverified_context"):
         context = ssl._create_unverified_context()
@@ -576,9 +590,15 @@ def main():
 
         return content, all_collected_data
 
-    except vim.fault.InvalidLogin as e: print(f"Collector Error: Invalid login credentials. Details: {e.msg}")
-    except ConnectionRefusedError: print(f"Collector Error: Connection refused to {vcenter_host}.")
-    except vmodl.fault.HostCommunication as e: print(f"Collector Host Communication Error: {e.msg}")
+    except vim.fault.InvalidLogin as e:
+        print(f"Collector Error: Invalid login credentials. Details: {e.msg}")
+    except ConnectionRefusedError:
+        print(f"Collector Error: Connection refused to {vcenter_host}.")
+    except vmodl.fault.HostCommunication as e:
+        print(f"Collector Host Communication Error: {e.msg}")
+    except socket.gaierror as e: # Catch gaierror specifically if it happens in SmartConnect
+        print(f"Collector socket.gaierror during SmartConnect or other socket operation: {e}")
+        traceback.print_exc()
     except Exception as e:
         print(f"Collector Unexpected Error: {e.__class__.__name__} - {e}")
         traceback.print_exc()
@@ -591,6 +611,20 @@ def main():
 
 if __name__ == "__main__":
     print("Running vsphere_collector.py directly for data export...")
+    # --- START OF DIAGNOSTIC BLOCK (for direct run) ---
+    vcenter_host_direct = os.getenv("VCENTER_HOST")
+    if vcenter_host_direct: # Check if the env var is loaded
+        print(f"--- DIAGNOSTIC (direct run) ---")
+        print(f"Attempting to resolve hostname: '{vcenter_host_direct}' directly using socket.gethostbyname")
+        try:
+            ip_address_direct = socket.gethostbyname(vcenter_host_direct)
+            print(f"Successfully resolved '{vcenter_host_direct}' to IP: {ip_address_direct}")
+        except socket.gaierror as e:
+            print(f"Failed to resolve '{vcenter_host_direct}' using socket.gethostbyname: {e}")
+        except Exception as e:
+            print(f"An unexpected error occurred during socket.gethostbyname for '{vcenter_host_direct}': {e}")
+        print(f"--- END OF DIAGNOSTIC (direct run) ---")
+    # --- END OF DIAGNOSTIC BLOCK (for direct run) ---
     start_time = datetime.now()
     _, collected_data_export = main()
     end_time = datetime.now()
@@ -608,4 +642,5 @@ if __name__ == "__main__":
             traceback.print_exc()
     else:
         print("\nData collection failed. No data to export.")
+
 
