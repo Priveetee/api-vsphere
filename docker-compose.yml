@@ -1,8 +1,6 @@
 services:
   api-vsphere:
-    build:
-      context: .
-      dockerfile: Dockerfile
+    image: lynear/api-explore:latest 
     ports:
       - "8000:8000"
     env_file:

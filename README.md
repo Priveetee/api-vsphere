@@ -5,26 +5,19 @@ A RESTful API built with Python (FastAPI) and PyVmomi to collect, process, and s
 ## Features
 
 -   **Comprehensive Data Collection**: Connects to vCenter Server to gather detailed information about your vSphere environment.
--   **RESTful API Endpoints**: Access structured JSON data for:
-    -   vCenter details
-    -   Datacenter, Cluster, and Host configurations (including hardware, network, and storage)
-    -   Datastore information
-    -   Network summaries (Standard and Distributed Port Groups)
-    -   Virtual Machine details (including hardware, disks, NICs, resource allocations, and custom attributes)
-    -   Resource Pool configurations
-    -   Distributed Virtual Switch (DVS) details
+-   **RESTful API Endpoints**: Access structured JSON data for various vSphere components.
 -   **Data Caching**: Collected data is cached in memory for quick API responses.
 -   **On-Demand Refresh**: Trigger a manual refresh of the vSphere data.
--   **3D Visualization Support**: Endpoint to generate a scene graph (nodes and edges) for visualizing relationships between infrastructure components (e.g., a VM and its host, datastores, networks).
--   **Technical Documentation (DAT)**: Endpoint to generate a structured JSON "Document d'Architecture Technique" for a specified Virtual Machine.
--   **Containerized**: Easy to deploy using Docker and Docker Compose.
+-   **3D Visualization Support**: Endpoint to generate a scene graph for visualizing infrastructure relationships.
+-   **Technical Documentation (DAT)**: Endpoint to generate a structured JSON "Document d'Architecture Technique" for VMs.
+-   **Containerized**: Easy to deploy using Docker and Docker Compose by building from source.
 
 ## Technologies
 
 -   Python 3.11+
--   FastAPI (for the REST API)
--   PyVmomi (VMware vSphere API Python Bindings)
--   Uvicorn (ASGI server)
+-   FastAPI
+-   PyVmomi
+-   Uvicorn
 -   Docker & Docker Compose
 
 ## Prerequisites
@@ -32,14 +25,17 @@ A RESTful API built with Python (FastAPI) and PyVmomi to collect, process, and s
 -   **Docker and Docker Compose**: Ensure they are installed on your system.
     -   Docker: [https://docs.docker.com/get-docker/](https://docs.docker.com/get-docker/)
     -   Docker Compose: [https://docs.docker.com/compose/install/](https://docs.docker.com/compose/install/)
--   **VMware vSphere Environment**: Access to a vCenter Server (tested with vCenter 6.7 and newer, but should work with 6.5+).
--   **vCenter Credentials**: A user account with at least read-only permissions on the vCenter objects you wish to query.
+-   **Git**: For cloning the repository.
+-   **VMware vSphere Environment**: Access to a vCenter Server (tested with vCenter 6.7+, should work with 6.5+).
+-   **vCenter Credentials**: A user account with at least read-only permissions.
 
-## Setup & Configuration
+## Setup & Running (Building from Source)
+
+This is the primary way to run the application if you have cloned this repository.
 
 1.  **Clone the Repository:**
     ```bash
-    git clone https://github.com/yourusername/api-vsphere.git # Replace with your actual repo URL
+    git clone https://github.com/Priveetee/api-vsphere.git
     cd api-vsphere
     ```
 
@@ -57,74 +53,82 @@ A RESTful API built with Python (FastAPI) and PyVmomi to collect, process, and s
         ```
         **Replace the placeholder values with your actual vCenter FQDN/IP, username, and password.**
 
-    **Important Note on `VCENTER_HOST` and Docker DNS Resolution:**
-    The Docker container running this application must be able to resolve the hostname specified for `VCENTER_HOST`.
-    *   **Publicly Resolvable FQDN:** If your `VCENTER_HOST` is a Fully Qualified Domain Name (FQDN) resolvable via public DNS (e.g., `vcenter.mycompany.com`), Docker should resolve it without issues.
-    *   **Private/Local Hostname:** If `VCENTER_HOST` is an internal hostname (e.g., `vcsa01.internal.lab`) only resolvable by your local DNS servers:
-        1.  **Try Default First:** Docker often inherits DNS settings from the host. It might work.
-        2.  **Use IP Address:** The simplest solution is often to use the direct IP address of your vCenter server for `VCENTER_HOST` in the `.env` file.
-        3.  **Configure Custom DNS for the Container (Advanced):** If you must use a local hostname and Docker's default DNS isn't working, you can configure custom DNS servers for the container. Edit the `docker-compose.yml` file and add/uncomment a `dns` section under the `api-vsphere` service:
-            ```yaml
-            services:
-              api-vsphere:
-                # ... other settings ...
-                dns:
-                  - <ip_of_your_local_dns_server_1>  # Replace with your DNS server's IP
-                  - <ip_of_your_local_dns_server_2>  # Optional secondary DNS
-                  - 8.8.8.8                          # A public DNS as a fallback (optional)
-            ```
-            Replace `<ip_of_your_local_dns_server_...>` with the actual IP addresses.
-
-    *   **Firewall:** Ensure that your Docker host (and thus the container) can reach the `VCENTER_HOST` on port 443 (HTTPS).
-
 3.  **Build and Run with Docker Compose:**
-    From the project's root directory (`api-vsphere`):
+    From the project's root directory (`api-vsphere`), run:
     ```bash
     docker compose up -d --build
     ```
-    This command will build the Docker image (if it doesn't exist or if files have changed) and start the application in detached mode.
+    This command will build the Docker image from the `Dockerfile` in this repository using the provided `docker-compose.yml` and then start the application in detached mode.
 
 4.  **Accessing the API:**
     Once the container is running, the API will be available at `http://localhost:8000`.
     *   Interactive API documentation (Swagger UI): `http://localhost:8000/docs`
     *   Alternative API documentation (ReDoc): `http://localhost:8000/redoc`
 
+### Important Note on `VCENTER_HOST` and Docker DNS Resolution
+
+The Docker container (built locally) needs to be able to resolve the hostname you provide for `VCENTER_HOST` in your `.env` file.
+*   **Publicly Resolvable FQDN:** If your `VCENTER_HOST` is a Fully Qualified Domain Name (FQDN) resolvable via public DNS, Docker should resolve it without issues.
+*   **Private/Local Hostname:** If `VCENTER_HOST` is an internal hostname only resolvable by your local DNS servers:
+    1.  **Try Default First:** Docker often inherits DNS settings from the host. It might work.
+    2.  **Use IP Address:** The simplest solution is often to use the direct IP address of your vCenter server for `VCENTER_HOST` in the `.env` file.
+    3.  **Configure Custom DNS for the Container (Advanced):** If you must use a local hostname and Docker's default DNS isn't working, edit the `docker-compose.yml` file (provided in this repository) and add/uncomment the `dns` section under the `api-vsphere` service:
+        ```yaml
+        services:
+          api-vsphere:
+            build: 
+              context: .
+              dockerfile: Dockerfile
+            dns:
+              - <ip_of_your_local_dns_server_1> 
+              - <ip_of_your_local_dns_server_2> 
+              - 8.8.8.8                          
+        ```
+        Replace `<ip_of_your_local_dns_server_...>` with the actual IP addresses.
+*   **Firewall:** Ensure that your Docker host (and thus the container) can reach the `VCENTER_HOST` on port 443 (HTTPS).
+
+## Using Pre-built Docker Image from Docker Hub (Alternative)
+
+For users who prefer not to build from source, a pre-built image is available on Docker Hub.
+
+1.  **Ensure Docker and Docker Compose are installed.**
+2.  **Create an Environment File (`.env`):**
+    Follow step 2 from the "Setup & Running (Building from Source)" section to create and configure your `.env` file with vCenter credentials. Place this `.env` file in a directory where you will also create the `docker-compose.yml` below.
+3.  **Create a `docker-compose.yml` file:**
+    In the same directory as your `.env` file, create a *new* `docker-compose.yml` with the following content:
+    ```yaml
+    services:
+      api-vsphere:
+        image: lynear/api-explore:latest
+        ports:
+          - "8000:8000"
+        env_file:
+          - .env
+        restart: unless-stopped
+        # --- Optional DNS Configuration ---
+        # (See "Important Note on VCENTER_HOST" above if you have connection issues)
+        # dns:
+        #   - <ip_of_your_local_dns_server_1>
+        #   - 8.8.8.8
+    ```
+4.  **Run the Application:**
+    From the directory containing your `.env` and this new `docker-compose.yml`:
+    ```bash
+    docker compose up -d
+    ```
+    The API will be available at `http://localhost:8000`.
+
 ## API Endpoints
 
-The API provides several endpoints to access vSphere data. Visit `http://localhost:8000/docs` for a full interactive list. Key endpoints include:
+Visit `http://localhost:8000/docs` for a full interactive list. Key endpoints include:
 
-*   `GET /api/v1/status`: Get the current status of the data collection process (last run time, success/failure).
-*   `POST /api/v1/vsphere/refresh`: Trigger a new data collection from vSphere. (Status code 202 Accepted)
-*   `POST /api/v1/visualization/scene-graph`: Generate a scene graph (nodes and edges) for 3D visualization.
-    *   **Request Body Example:**
-        ```json
-        {
-          "start_object_identifier": "Name-Or-InstanceUUID-Of-VM",
-          "start_object_type": "VM",
-          "vm_inclusions": {
-            "include_host": true,
-            "include_cluster_of_host": true,
-            "include_datastores": true,
-            "include_networks": true
-          },
-          "host_depth2_inclusions": {
-            "include_vms_on_host": true
-          },
-          "depth": 1
-        }
-        ```
-*   `POST /api/v1/dat/generate/vm`: Generate a structured JSON Document d'Architecture Technique (DAT) for a specified VM.
-    *   **Request Body Example:**
-        ```json
-        {
-          "vm_identifier": "Name-Or-InstanceUUID-Of-VM"
-        }
-        ```
-*   *(You can add more specific GET endpoints here later if you implement them, e.g., `/api/v1/vms`, `/api/v1/hosts`)*
+*   `GET /api/v1/status`: Get the current status of the data collection process.
+*   `POST /api/v1/vsphere/refresh`: Trigger a new data collection from vSphere.
+*   `POST /api/v1/visualization/scene-graph`: Generate a scene graph for 3D visualization.
+*   `POST /api/v1/dat/generate/vm`: Generate a structured JSON DAT for a specified VM.
 
 ## Stopping the Application
 
-To stop the application:
 ```bash
 docker compose down
 ```
@@ -133,49 +137,28 @@ To stop and remove volumes (if any were explicitly defined and you want to clear
 docker compose down --volumes
 ```
 
-## Development
+## Development (Local Python Environment without Docker)
 
-For local development without Docker:
-
-1.  **Create a Python Virtual Environment:**
+1.  Clone the repository.
+2.  Create and activate a Python virtual environment:
     ```bash
     python3 -m venv .venv
     source .venv/bin/activate  # On Linux/macOS
-    # .venv\Scripts\activate   # On Windows
+    # .venv\Scripts\activate   # On Windows (Why are u on this shitty OS are u out of ure freaking mind ?!)
     ```
-
-2.  **Install Dependencies:**
-    ```bash
-    pip install -r requirements.txt
-    ```
-
-3.  **Set Environment Variables:**
-    Ensure your `.env` file is created and configured as described in the "Setup & Configuration" section. The script will load it.
-
-4.  **Run the API Server:**
-    ```bash
-    uvicorn api_server:app --reload --host 0.0.0.0 --port 8000
-    ```
-    The `--reload` flag enables auto-reloading when code changes.
+3.  Install dependencies: `pip install -r requirements.txt`
+4.  Ensure your `.env` file is created and configured.
+5.  Run: `uvicorn api_server:app --reload --host 0.0.0.0 --port 8000`
 
 ## Troubleshooting
 
-*   **Connection Errors to vCenter:**
-    *   Verify `VCENTER_HOST`, `VCENTER_USER`, and `VCENTER_PASSWORD` in your `.env` file are correct.
-    *   Ensure the `VCENTER_HOST` is resolvable from where you're running the application (or from within the Docker container). See the note on DNS resolution above.
-    *   Check firewall rules: the application needs to reach vCenter on port 443 (HTTPS).
-    *   Test basic connectivity from the Docker host: `curl -kv https://<VCENTER_HOST>`
-*   **`socket.gaierror: [Errno -2] Name or service not known` (inside Docker):** This means the container cannot resolve the `VCENTER_HOST`. Refer to the "Important Note on `VCENTER_HOST` and Docker DNS Resolution" section above.
-*   **API returning 503 or "Data cache not initialized":** This usually means the initial data collection from vSphere failed or hasn't completed. Check the container logs for errors from `vsphere_collector.py`:
-    ```bash
-    docker logs api-vsphere-api-vsphere-1 # Or the actual container name/ID
-    ```
-    You can trigger a new collection via the `POST /api/v1/vsphere/refresh` endpoint.
+*   **Connection Errors to vCenter:** Verify credentials in `.env`, hostname resolvability (see DNS note), and firewall (port 443).
+*   **`socket.gaierror: [Errno -2] Name or service not known` (inside Docker):** Refer to the "Important Note on `VCENTER_HOST`" section.
+*   **API returning 503 or "Data cache not initialized":** Check container logs (`docker logs <container_name_or_id>`) for errors from `vsphere_collector.py`. Trigger a refresh via `POST /api/v1/vsphere/refresh`.
 
 ## Contributing
 
 Contributions are welcome! Please feel free to open an issue or submit a pull request.
-*(Add more specific contribution guidelines if you wish)*
 
 ## License
 
