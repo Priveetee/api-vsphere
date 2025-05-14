@@ -6,7 +6,7 @@ import logging
 from typing import List, Dict, Any, Optional, Union, Literal, Set
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field
-import vsphere_collector # Assurez-vous que ce module est accessible et correct
+import vsphere_collector 
 
 # --- Logging Configuration ---
 logging.basicConfig(
@@ -78,7 +78,7 @@ async def lifespan(app: FastAPI):
 app = FastAPI(
     title="vSphere Data API",
     description="API pour récupérer des données d'une infrastructure VMware vSphere.",
-    version="1.5.0", # Version from screenshot
+    version="1.5.0", 
     lifespan=lifespan,
 )
 

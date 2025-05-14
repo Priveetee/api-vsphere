@@ -7,7 +7,7 @@ from pyVmomi import vim, vmodl
 import traceback
 from datetime import datetime
 import json
-import socket # Ensure this is imported
+import socket 
 
 # Helper function to safely get attributes
 def safe_get(obj, attr_path, default='N/A'):
